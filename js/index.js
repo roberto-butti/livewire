@@ -3,6 +3,7 @@ import '@/dom/polyfills/index'
 import store from '@/Store'
 import Connection from '@/connection'
 import Polling from '@/component/Polling'
+import Onmessage from '@/component/Onmessage'
 import Component from '@/component/index'
 import { dispatch, wireDirectives } from '@/util'
 import FileUploads from '@/component/FileUploads'
@@ -122,6 +123,7 @@ FileUploads()
 LaravelEcho()
 DirtyStates()
 Polling()
+Onmessage()
 
 dispatch('livewire:available')
 
